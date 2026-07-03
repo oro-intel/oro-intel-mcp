@@ -18,4 +18,4 @@ Category: **government / procurement / data**.
 | Glama | https://glama.ai/mcp/servers | pending — auto-lists from GitHub; verify render | canonical | — |
 | PulseMCP | https://www.pulsemcp.com | pending — auto-lists from registry; verify render | canonical | — |
 | mcp.so | https://mcp.so | pending — submit via site form | canonical | — |
-| awesome-mcp-servers | https://github.com/punkpeye/awesome-mcp-servers | pending — PR from oro-intel fork (never personal account) | one-liner + repo link | — |
+| awesome-mcp-servers | https://github.com/punkpeye/awesome-mcp-servers/pull/9162 | **PR open** (from oro-intel fork, Finance & Fintech section) | one-liner + repo link | 2026-07-03 |
