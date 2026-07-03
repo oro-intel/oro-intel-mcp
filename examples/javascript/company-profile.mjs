@@ -15,8 +15,10 @@ async function get(path) {
 }
 
 // 1. Resolve name -> company_number (5 credits)
+// Returns the single best match: core record incl. companies_house_number
 const search = await get(`/companies/search?name=${encodeURIComponent(query)}`);
-const number = search.items[0].company_number;
+const number = search.companies_house_number;
+if (!number) throw new Error(`Best match "${search.name}" has no Companies House number — try a more specific name.`);
 console.log(`Resolved "${query}" -> ${number} (credits_charged=${search.credits_charged})`);
 
 // 2. Full profile: core record + every contract won, one call (12 credits)
