@@ -12,7 +12,7 @@ Category: **government / procurement / data**.
 
 | Target | URL | Status | Description used | Date |
 |---|---|---|---|---|
-| Official MCP registry | https://registry.modelcontextprotocol.io | pending — publish via `mcp-publisher` (see PUBLISHING.md) | short form | — |
+| Official MCP registry | https://registry.modelcontextprotocol.io | **published** — `io.github.oro-intel/oro-intel-mcp` v1.0.0, status active | short form | 2026-07-03 |
 | Anthropic / Claude connectors directory | https://claude.com/connectors | pending — manual submit by Will | canonical | — |
 | Smithery | https://smithery.ai | pending — claim after registry sync | canonical | — |
 | Glama | https://glama.ai/mcp/servers | pending — auto-lists from GitHub; verify render | canonical | — |
