@@ -215,4 +215,5 @@ Docs <https://documentation.oro-intel.com> ·
 MCP guide <https://documentation.oro-intel.com/docs/mcp> ·
 Quickstart <https://documentation.oro-intel.com/docs/quickstart> ·
 Agents start here <https://documentation.oro-intel.com/llms.txt> ·
+Status <https://documentation.oro-intel.com/docs/status> ·
 Changelog [CHANGELOG.md](./CHANGELOG.md)
