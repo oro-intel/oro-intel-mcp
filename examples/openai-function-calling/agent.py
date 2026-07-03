@@ -47,7 +47,7 @@ TOOLS = [
 
 def call_tool(name: str, args: dict) -> dict:
     if name == "oro_lookup_company":
-        return oro.get("/companies/search", params={"q": args["q"]}).raise_for_status().json()
+        return oro.get("/companies/search", params={"name": args["q"]}).raise_for_status().json()
     if name == "oro_company_profile":
         return oro.get(f"/companies/{args['company_number']}/profile").raise_for_status().json()
     raise ValueError(name)

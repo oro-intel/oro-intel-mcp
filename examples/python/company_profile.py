@@ -17,7 +17,7 @@ query = sys.argv[1] if len(sys.argv) > 1 else "Serco"
 
 with httpx.Client(base_url=BASE, headers=HEADERS, timeout=30) as client:
     # 1. Resolve name -> company_number (5 credits)
-    search = client.get("/companies/search", params={"q": query}).raise_for_status().json()
+    search = client.get("/companies/search", params={"name": query}).raise_for_status().json()
     number = search["items"][0]["company_number"]
     print(f"Resolved {query!r} -> {number} (credits_charged={search['credits_charged']})")
 

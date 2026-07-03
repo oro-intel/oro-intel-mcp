@@ -198,7 +198,7 @@ Prefer plain HTTP? Same data, same key: `https://api.oro-intel.com/v1/*`
 (OpenAPI 3.1: <https://api.oro-intel.com/openapi.json>).
 
 ```bash
-curl -s "https://api.oro-intel.com/v1/companies/search?q=Serco" \
+curl -s "https://api.oro-intel.com/v1/companies/search?name=Serco" \
   -H "Authorization: Bearer $ORO_API_KEY"
 ```
 

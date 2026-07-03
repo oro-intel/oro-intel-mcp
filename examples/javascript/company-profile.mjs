@@ -15,7 +15,7 @@ async function get(path) {
 }
 
 // 1. Resolve name -> company_number (5 credits)
-const search = await get(`/companies/search?q=${encodeURIComponent(query)}`);
+const search = await get(`/companies/search?name=${encodeURIComponent(query)}`);
 const number = search.items[0].company_number;
 console.log(`Resolved "${query}" -> ${number} (credits_charged=${search.credits_charged})`);
 

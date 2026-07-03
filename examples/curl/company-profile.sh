@@ -8,7 +8,7 @@ BASE="https://api.oro-intel.com/v1"
 AUTH="Authorization: Bearer $ORO_API_KEY"
 
 # 1. Resolve name -> company_number (5 credits)
-SEARCH=$(curl -sf "$BASE/companies/search?q=$(printf %s "$QUERY" | sed 's/ /%20/g')" -H "$AUTH")
+SEARCH=$(curl -sf "$BASE/companies/search?name=$(printf %s "$QUERY" | sed 's/ /%20/g')" -H "$AUTH")
 NUMBER=$(printf %s "$SEARCH" | python -c "import json,sys; d=json.load(sys.stdin); print(d['items'][0]['company_number'])")
 echo "Resolved '$QUERY' -> company_number $NUMBER (credits_charged=$(printf %s "$SEARCH" | python -c "import json,sys; print(json.load(sys.stdin)['credits_charged'])"))"
 
