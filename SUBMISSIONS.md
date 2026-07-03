@@ -10,6 +10,19 @@ Short form (≤100 chars, used in `server.json`):
 
 Category: **government / procurement / data**.
 
+## Anthropic / Claude connectors directory — submission pack (manual submit)
+
+- **Name:** Oro Intel
+- **Description:** canonical (above)
+- **Remote MCP URL:** `https://api.oro-intel.com/mcp/` (streamable HTTP, trailing slash required)
+- **Auth model:** OAuth sign-in (interactive) or `Authorization: Bearer oro_<key>` (headless); keys at https://app.oro-intel.com/dashboard/developers
+- **Logo:** use the site logo asset from oro-intel.com (marketing repo `public/`)
+- **Categories:** Data & Analytics / Government / Productivity
+- **Docs:** https://documentation.oro-intel.com · **Repo:** https://github.com/oro-intel/oro-intel-mcp
+- **Support contact:** william@oro-intel.com
+
+## Tracker
+
 | Target | URL | Status | Description used | Date |
 |---|---|---|---|---|
 | Official MCP registry | https://registry.modelcontextprotocol.io | **published** — `io.github.oro-intel/oro-intel-mcp` v1.0.0, status active | short form | 2026-07-03 |
