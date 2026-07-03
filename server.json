@@ -1,0 +1,25 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.oro-intel/oro-intel-mcp",
+  "description": "UK public procurement data for AI agents: tenders, contracts, buyer and supplier profiles.",
+  "repository": {
+    "url": "https://github.com/oro-intel/oro-intel-mcp",
+    "source": "github"
+  },
+  "version": "1.0.0",
+  "websiteUrl": "https://documentation.oro-intel.com",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.oro-intel.com/mcp/",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Optional for headless use: 'Bearer oro_<key>' from https://app.oro-intel.com/dashboard/developers. Interactive clients can use OAuth sign-in instead.",
+          "isRequired": false,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}
